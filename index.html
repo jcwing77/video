@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            padding-top: 10px;
+        }
+        .all_bg{
+             width: 800px;
+              height: 600px;
+               margin: 0px auto;
+        }
+        #allcanvas{
+             position: relative;
+              width: 800px;
+               height: 600px;
+                margin: 0;
+                 background: #ddd;
+        }
+        #canvas1{
+            position: absolute;
+             width: 800px;
+              height: 600px;
+              z-index: 1;
+               bottom: 0;
+                left: 0;
+
+        }
+        #canvas2{
+            position: absolute;
+             width: 800px;
+              height: 600px;
+              z-index: 0;
+               bottom: 0;
+                left: 0;
+
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="all_bg">
+        <div id="allcanvas">
+            <!-- 绘制弹幕 -->
+            <canvas id="canvas1" width="800" height="600"></canvas>
+            <!-- 绘制视频 -->
+            <canvas id="canvas2" width="800" height="600"></canvas>
+        </div>
+        发弹幕：<input type="text" id="msg">
+    </div>
+    <script src="js/commonFunctions.js"></script>
+    <script src="js/video.js"></script>
+    <script src="js/data.js"></script>
+    
+</body>
+</html>
